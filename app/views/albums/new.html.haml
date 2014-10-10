@@ -1,0 +1,37 @@
+= form_for :album, url: albums_path do |f|
+  %fieldset.well
+    .field.form-group
+      = f.label :name
+    .col-sm-10
+      = f.text_field :name
+    .field.form-group
+      = f.label :caption
+    .col-sm-10
+      = f.text_field :caption
+    .field.form-group
+      = f.label :year
+    .col-sm-10
+      = f.text_field :year
+    .field.form-group
+      = f.label :language
+    .col-sm-10
+      = f.text_field :language
+    .field.form-group
+      = f.label :director
+    .col-sm-10
+      = f.text_field :director
+    .field.form-group
+      = f.label :budget
+    .col-sm-10
+      = f.text_field :budget
+    .field.form-group
+      = f.label :writer
+    .col-sm-10
+      = f.text_field :write
+    .field.form-group
+      = f.label :country
+    .col-sm-10
+      = f.text_field :country
+    = f.submit "Save Album"
+
+
